@@ -1,0 +1,17 @@
+api:
+  token: "dce8c5264b254babaf1ffb275554d858"
+
+database:
+  type: "duckdb"
+  duckdb_path: "../data/footballanalysis.duckdb"
+  snowflake: 
+    user: "YOUR_USER"
+    password: "YOUR_PASSWORD"
+    account: "YOUR_ACCOUNT"
+    database: "YOUR_DB"
+    warehouse: "YOUR_WH"
+
+etl:
+  requests_per_min: 10
+  retries_per_team: 3
+  sleep_between_retries: 2
